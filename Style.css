@@ -17,11 +17,12 @@
   font-weight: bold;
   text-decoration: none;
   padding: 14px 28px;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar a:hover
 {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 .inactiveLink {
   pointer-events: none;
@@ -118,4 +119,4 @@ html {
   { 
     display: flex;
   }
-}
+}s

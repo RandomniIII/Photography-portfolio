@@ -101,14 +101,33 @@ html {
   clear: both;
   display: table;
 }
-.container h2{
- font-family: 'Poppins', sans-serif;
-}
-.container p{
+.container p, .container h2 , .contact{
  font-family: 'Poppins', sans-serif;
 }
 .title {
   color: grey;
+}
+.myButton {
+  background:linear-gradient(to bottom, #8a3ab9 5%, #bc2a8e 100%);
+  background-color:#8a3ab9;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  font-weight:bold;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #bc2a8e 5%, #8a3ab9 100%);
+  background-color:#bc2a8e;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
 }
 @media screen and (max-width: 700px)
 {
@@ -125,4 +144,4 @@ html {
   { 
     display: flex;
   }
-}s
+}

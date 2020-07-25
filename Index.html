@@ -15,6 +15,22 @@
 
   gtag('config', 'UA-172407777-1');
 </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
 
 </head>
 <body>
@@ -32,14 +48,28 @@
     <a href="AboutMe.html">About Me</a>
   </div>
   <br>
+
+      <div>
+        <select>
+            <option>Choose Color</option>
+            <option value="red">Sky</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div class="red box">
+            <img src="IMG_1865.jpg" style="width:100%">
+    </div>
+    <div class="green box">You have selected <strong>green option</strong> so i am here</div>
+    <div class="blue box">You have selected <strong>blue option</strong> so i am here</div>
+
 <div class="content">
-  <div class="row">
+<!--   <div class="row">
       <div class="column">
         <div class="card">
-            <img src="IMG_1865.jpg" style="width:100%">
         </div>
       </div>
-
+ -->
       <div class="column">
         <div class="card">
             <img src="IMG_1856.jpg" style="width:100%">
